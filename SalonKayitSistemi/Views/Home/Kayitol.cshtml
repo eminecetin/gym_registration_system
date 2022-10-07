@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "Kayitol";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="banner_w3lspvt-2">
+</div>
+    </div>
+<div class="breadcrumb-agile">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/Home/Index">Anasayfa</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Kayıt Ol</li>
+    </ol>
+</div>
+<div class="container shadow mt-3 mb-2 main">
+    <div class="row">
+        <h1>Üye Kayıt Formu</h1><hr><br>
+    </div>
+    <div class="row">
+        <form method="post">
+            
+            <div class="row">
+                <div class="col-md-4 form-group">
+                </div>
+                @*<div class="col-md-4 form-group">
+                    <label class="formlbl">Resim</label>
+                    <input type="file" class="form-control" placeholder="Resminizi Yükleyiniz">
+                </div>*@
+                <div class="col-md-4 form-group">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Ad*</label>
+                    <input type="text" class="form-control" placeholder="Adınızı Giriniz" name="Adi" required>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Soyad*</label>
+                    <input type="text" class="form-control" placeholder="Soyadınızı Giriniz" name="SoyAdi" required>
+                </div>
+
+
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">TC Kimlik No*</label>
+                    <input type="number" class="form-control" placeholder="TC Kimlik No Giriniz" name="TCKimlikNo" required>
+
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Cinsiyet*</label>
+                    <select type="text" class="form-control" placeholder="Cinsiyetinizi Giriniz" name="Cinsiyet" required>
+                        <option value=" "></option>
+                        <option value="K">K</option>
+                        <option value="E">E</option>
+                    </select>
+
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Boy*</label>
+                    <input type="number" class="form-control" placeholder="Boyunuzu Giriniz" name="Boy" required>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Kilo*</label>
+                    <input type="number" class="form-control" placeholder="Kilonuzu Giriniz" name="Kilo" required>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Yaş*</label>
+                    <input type="number" class="form-control" min="14" placeholder="Yaşınızı Giriniz" name="Yas" required>
+                </div>
+
+                <div class=" col-md-4  form-group">
+                    <label class="formlbl">E-mail *</label>
+                    <input type="email" class="form-control" placeholder="Mail Adresinizi Giriniz" name="Email" required>
+                </div>
+                <div class=" col-md-4  form-group">
+                    <label class="formlbl">Telefon Numarası *</label>
+                    <input type="tel" class="form-control" placeholder="Telefon Numaranızı Giriniz" name="TelNo" required>
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Kayıt Olacağınız Program*</label>
+                    <br>
+                    <input type="radio" name="spor_cesiti"> Pilates <br>
+                    <input type="radio" name="spor_cesiti"> Zumba <br>
+                    <input type="radio" name="spor_cesiti"> Temel Cardio <br>
+                    <input type="radio" name="spor_cesiti"> İleri Cardio
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Antrenör Seçimi*</label>
+                    <br>
+                    <input type="radio" name="Antrenör_Adi"> Ayşe Çelik(Temel Cardio Antrenörü) <br>
+                    <input type="radio" name="Antrenör_Adi"> Ali Göz (İleri Cardio Antrenörü) <br>
+                    <input type="radio" name="Antrenör_Adi"> Fatma Yürek (Pilates Eğitmeni)<br>
+                    <input type="radio" name="Antrenör_Adi"> Ela Kır (Zumba Eğitmeni)
+                </div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Çalışma Şekli*</label>
+                    <br>
+                    <input type="radio" name="Calisma_sekli" required> Kişisel Antrenör Eşliğinde <br>
+                    <input type="radio" name="Calisma_sekli"> Grup Eşliğinde <br>
+                    <input type="radio" name="Calisma_sekli"> Bireysel Şekilde <br>
+                </div>
+                <div class="col-md-4 form-group"></div>
+                <div class="col-md-4 form-group">
+                    <label class="formlbl">Yararlanmak İstediğiniz Ek Hizmetler*</label>
+                    <br>
+                    <input type="checkbox" name="hizmet_secimi" required> Kahve <br>
+                    <input type="checkbox" name="hizmet_secimi"> Su <br>
+                    <input type="checkbox" name="hizmet_secimi"> Protein Tozu <br>
+                    <input type="checkbox" name="hizmet_secimi"> Yiyecek <br>
+                    <input type="checkbox" name="hizmet_secimi"> Spor Ekipmanları(havlu vb.)
+                </div>
+                <div class="col-md-4 form-group"></div>
+                <div class="mb-4">
+                    <input class="formbtn" type="submit" value="Kayıt Ol" onclick="butonfonksiyonu()" />
+                    <input class="formbtn" type="reset" value="Temizle" />
+
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+    </div>

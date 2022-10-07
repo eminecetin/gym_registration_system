@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>REFORMATION FITNESS&GYM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Reformation fitness&gym spor center" />
+    <link rel="stylesheet" href="~/web/bootstrap.css">
+    <link rel="icon" href="~/web/icconn.ico" />
+    <link href="~/web/css_slider.css" type="text/css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="~/web/style.css" type="text/css" media="all" />
+
+</head>
+<body>
+    <div class="main-top" id="home">
+        <header>
+            <div class="container-fluid">
+                <div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
+
+                    <div id="logo">
+                        <h1><a class="" href="/HomeController/Index" img src="reformationlogoo.png"> </a></h1>
+                    </div>
+                    <div class="nav_w3ls">
+                        <nav>
+                            <label for="drop" class="toggle">Menu</label>
+                            <input type="checkbox" id="drop" />
+                            <ul class="menu">
+                                <li><a href="/Home/Index">Anasayfa</a></li>
+                                <li class="mx-lg-4 mx-md-3 my-md-0 my-2"><a href="/Home/Hakkimizda">Hakkımızda</a></li>
+                                <li><a href="/Home/Kayitol">Kayıt Ol</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+    </script>
+
+    @RenderBody()
+
+    <footer class="footer py-4">
+        <div class="container py-sm-1">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 agileinfo_footer_grid">
+                    <div class="logo-2 mb-sm-4 mb-3">
+                        <img src="~/web/logo.png" style=" border-radius: 9px 9px 9px 9px;">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 agileinfo_footer_grid mt-sm-0 mt-5 ">
+                    <h4 class="mb-sm-5 mb-4"></h4>
+                </div>
+                <div class="col-lg-3 col-sm-6 agileinfo_footer_grid pl-lg-0 mt-lg-0 mt-5">
+
+                </div>
+                <div class="col-lg-3 col-sm-6 agileinfo_footer_grid mt-lg-0 mt-5">
+                    <ul class="list-unstyled">
+                        <br>
+                        <br>
+                        <li>
+                            <img src="https://img.icons8.com/material-outlined/24/000000/marker.png" /><a href="https://goo.gl/maps/R8qejz8FcUbpz2PY8">Gelişim mah. İnönü cad. Köyceğiz/Muğla</a>
+                        <li>
+                            <img src="https://img.icons8.com/ios/24/000000/laptop-e-mail--v2.png" /><a href="mailto:info@example.com">reformation.gym@outlook.com</a>
+                        </li>
+                        <li>
+                            <img src="https://img.icons8.com/ios/24/000000/phone.png" /> (0252) 4848 484 848
+                        </li>
+                        <li>
+                            <img src="https://img.icons8.com/ios/24/000000/clock--v1.png" />Her gün 09:00-23:00
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container text-center">
+                    <a href="#home" class="move-top text-center"></a>
+
+                    <p>© 2021 Tüm Hakları Saklıdır.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
